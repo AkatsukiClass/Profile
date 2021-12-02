@@ -1,0 +1,337 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/*nav*/
+nav i {
+  position: absolute;
+  left: 85%;
+  top: 25px;
+  font-size: 25px;
+}
+nav .fas {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+li {
+  list-style-type: none;
+}
+
+.container > a {
+  font-size: 22px;
+}
+
+a:hover {
+  background-color: gray;
+}
+
+nav {
+  border-bottom: gray 5px solid;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.container .navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.removebg:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.nav-item .current{
+  background-color: #181818;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .container .medianav > .navbar {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    width: 30%;
+    padding-left: 0px;
+    margin: auto;
+    background-color: #212529;
+    z-index: 2;
+  }
+  .medianav .navbar > .nav-item {
+    margin-bottom: 25px;
+  }
+  .container .medianav > .navbar {
+    display: none;
+  }
+  nav .fas{
+    display: block;
+  }
+  nav:hover .medianav > .navbar{
+    display: block;
+  }
+}
+
+
+
+/*Body/ Bio*/
+
+
+.biocontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2.5%;
+  margin-bottom: 14.5%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  align-items: center;
+  border: 2px #181818 solid;
+  background-color: #2C2C2C;
+}
+
+.bioimg img {
+  width: 50%;
+}
+
+.item1 {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  bottom: 25px;
+}
+
+body h1 {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.biopg {
+  width: 70%;
+  text-align: left;
+}
+
+.bioimg img {
+  border-radius: 100px;
+}
+
+@media screen and (max-width:768px) {
+  .biocontainer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .biocontainer .item3 {
+    padding-top: 35px;
+  }
+}
+
+/*Skills*/
+
+
+
+
+.skillscontainer {
+  display: grid;
+  margin: auto;
+  grid-template-columns: auto;
+  grid-template-rows: .5fr .5fr;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border: 2px #181818 solid;
+  background-color: #2C2C2C;
+}
+
+
+.cards2d {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  grid-gap: 25px;
+}
+
+.cards2d .card {
+  width: 100%;
+  background-color: #181818;
+}
+
+.workhistory {
+  margin: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2.5%;
+  margin-bottom: 14.5%;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border: 2px #181818 solid;
+  background-color: #2C2C2C;
+}
+
+.carousel {
+  margin: auto;
+}
+
+.carousel img {
+  width: 50%;
+}
+
+.carousel-item .carousel-caption {
+  background-color: #120D0D;
+}
+
+@media screen and (max-width:768px) {
+  .skillscontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards2d  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/*WorkHistory*/
+
+
+.workhistory .carousel {
+  width: 90%;
+  margin-bottom: 3.5%;
+}
+
+.accordion-button {
+  background-color: #181818;
+  color: red;
+}
+.accordion-item {
+  background-color: #120D0D;
+}
+
+.accordion-header .accordion-button {
+  text-align: center;
+}
+
+
+.workhistory .accordion {
+  margin: auto;
+  width: 90%;
+}
+
+
+
+#headingOne > button{
+  height: 55px;
+}
+
+#headingOne  > button > span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-38%, -50%);
+}
+
+#headingTwo  > button > span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-38%, -50%);
+}
+
+#headingThree > button > span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-42.5%, -50%);
+}
+
+/*Contact*/
+
+.contactcontainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2.5%;
+  margin-bottom: 10.5%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  border: 2px #181818 solid;
+  background-color: #2C2C2C;
+  font-size: 20px;
+  grid-row-gap: 10px;
+}
+
+.contactcontainer i {
+  font-size: 30px;
+}
+
+.contactcontainer a {
+  margin: auto;
+  padding: 0px !important;
+}
+
+.contactcontainer a:hover {
+  background-color: inherit;
+}
+
+.contactcontainer p {
+  margin: auto;
+}
+
+.myemail div {
+  padding-bottom: 10px;
+}
+.mygit div {
+  padding-bottom: 10px;
+}
+.myfb div {
+  padding-bottom: 10px;
+}
+
+.myphone div {
+  padding-bottom: 10px;
+}
+
+
+/*Footer*/
+
+footer {
+  border-top: gray 5px solid;
+}
+footer p {
+  padding-top: 15px;
+}
